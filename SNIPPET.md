@@ -32,7 +32,7 @@ def create
     query_string,
     variables: query_variables,
     context: {
-      optics_agent: env[:optics_agent].with_document(query_string)
+      optics_agent: request.env[:optics_agent].with_document(query_string)
     }
   )
 

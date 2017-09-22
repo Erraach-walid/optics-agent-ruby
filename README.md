@@ -42,7 +42,7 @@ def create
     context: {
       # This is the key line: we take the optics_agent passed in from the
       # Rack environment and pass it as context
-      optics_agent: env[:optics_agent]
+      optics_agent: request.env[:optics_agent]
     }
   )
 
@@ -138,7 +138,7 @@ Solution: Ensure you are passing your schema to the agent [configuration](#confi
 
 ### Message: No agent passed in graphql context
 
-Solution: Ensure you are passing `context: { optics_agent: env[:optics_agent].with_document(query_string) }` where `env` is the Rack request environment, and `query_string` is the string representing your query. See the [setup instructions](#rails-setup) for more details.
+Solution: Ensure you are passing `context: { optics_agent: request.env[:optics_agent].with_document(query_string) }` where `request.env` is the Rack request environment, and `query_string` is the string representing your query. See the [setup instructions](#rails-setup) for more details.
 
 ### Debugging
 
