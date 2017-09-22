@@ -1,5 +1,9 @@
 ### vNEXT
 
+### v0.5.5
+
+- Lower faraday requirement.
+
 ### v0.5.4
 
 - Bugfixes.
