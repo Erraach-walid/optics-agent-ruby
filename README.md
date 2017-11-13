@@ -3,6 +3,15 @@ Apollo Optics agent for GraphQL Monitoring in Ruby.
 
 [![Gem Version](https://badge.fury.io/rb/optics-agent.svg)](https://badge.fury.io/rb/optics-agent) [![Build Status](https://travis-ci.org/apollostack/optics-agent-ruby.svg?branch=master)](https://travis-ci.org/apollostack/optics-agent-ruby)
 
+---
+
+:point_up: <strong>PLEASE NOTE:</strong>
+
+There is a new version of Optics!
+[Apollo Engine](https://www.apollographql.com/engine/) has everything Optics does plus error tracking, query caching, and more.
+Start using it now with the new [Apollo Tracing](https://github.com/uniiverse/apollo-tracing-ruby) gem, which requires adding just 2 lines to your Ruby code.
+
+---
 
 ## Installing
 
