@@ -3,8 +3,41 @@ Apollo Optics agent for GraphQL Monitoring in Ruby.
 
 [![Gem Version](https://badge.fury.io/rb/optics-agent.svg)](https://badge.fury.io/rb/optics-agent) [![Build Status](https://travis-ci.org/apollostack/optics-agent-ruby.svg?branch=master)](https://travis-ci.org/apollostack/optics-agent-ruby)
 
+---
+
+:point_up: <strong>PLEASE NOTE:</strong>
+
+There is a new version of Optics!
+[Apollo Engine](https://www.apollographql.com/engine/) has everything Optics does plus error tracking, query caching, and more.
+Start using it now with the new [Apollo Tracing](https://github.com/uniiverse/apollo-tracing-ruby) gem, which requires adding just 2 lines to your Ruby code.
+
+---
 
 ## Installing
+
+Before installing Optics, please be aware that Optics is unsupported at this time (3/21/2018).
+
+### Goodbye Optics...
+Optics will be available for a short time in an unsupported state. This means that:
+
+* You can still login to access your data
+* If our service goes down, we will restart it
+* We will not troubleshoot or maintain
+* Optics will be shut down in the near future
+
+### Hello Engine!
+Our team is now fully focused on [Apollo Engine](https://engine.apollographql.com), which has everything in Optics and more:
+
+* [Error tracking](https://www.apollographql.com/docs/engine/error-tracking.html)
+* [Query caching](https://www.apollographql.com/docs/engine/caching.html)
+* [Field-level schema analysis](https://engine.apollographql.com)
+* [Improved tracing](https://www.apollographql.com/docs/engine/performance.html)
+
+Need help switching to Engine? [Learn More](mailto:support@apollographql.com)
+
+## Still want to install? :D
+
+Here you go!
 
 Add
 
@@ -16,7 +49,7 @@ To your `Gemfile`
 
 ### API key
 
-You'll need to run your app with the `OPTICS_API_KEY` environment variable set (or set via [`agent.configure`](#configuration)) to the API key of your Apollo Optics endpoint; you can get an API key by setting up a endpoint at https://optics.apollodata.com.
+You'll need to run your app with the `OPTICS_API_KEY` environment variable set (or set via [`agent.configure`](#configuration)) to the API key of your Apollo Optics endpoint.
 
 ## Rails Setup
 
